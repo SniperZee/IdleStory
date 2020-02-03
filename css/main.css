@@ -7,3 +7,22 @@
     font-size: 13px;
     color: rgb(133, 133, 133);
 }
+#game {
+    position: relative;
+    margin: auto;
+    width: 750px;
+    height: 500px;
+    background-image: url("../assets/bg/henesys.png");
+}
+#ignoretext{
+    text-align: center;
+    padding: 100px;
+    color: #f0f8ff;
+    font-size: 60pt;
+    font-family: Arial,sans-serif;
+    text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000;
+}
