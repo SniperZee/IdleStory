@@ -1,17 +1,18 @@
 const monster = { //monster stats
-   HP: 10,
-   maxHP: 10,
-   STR: 1,
+   name: "Snail",
+   hp: 10,
+   hpMax: 10,
+   str: 1,
    mesoReward: 10,
+   xpReward: 10,
 };
-
 function attack() { //attacks the monster
-   monster.HP -= player.STR;
-   if(monster.HP <= 0){ // if the monster has no health, give gold, and bring back the monster
+   monster.hp -= player.str;
+   if(monster.hp <= 0){ // if the monster has no health, give meso, and bring back the monster
       monsterDie();
    }else{ // if the monster is alive, it'll attack the player
-      player.HP -= monster.STR;
-      if(player.HP <= 0){//if the player dies, take half of their gold
+      player.hp -= monster.str;
+      if(player.hp <= 0){//if the player dies, take 10% of their exp
          playerDie();
       }
    }
@@ -19,11 +20,15 @@ function attack() { //attacks the monster
 }
 function monsterDie(){
    console.log("Monster has died.");
-   monster.HP = monster.maxHP;
+   monster.hp = monster.hpMax;
    player.meso += monster.mesoReward;
+   player.xp += monster.xpReward;
+   if (player.xp >= player.xpToNextLevel){
+      levelUp();
+   }
 }
 function playerDie(){
    console.log("Player has died.");
-   player.meso -= Math.round(player.meso /= 2);
-   player.HP = player.maxHP;
+   player.xp -= Math.round(player.xp *= 0.9);
+   player.hp = player.hpMax;
 }

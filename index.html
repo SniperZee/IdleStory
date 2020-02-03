@@ -8,13 +8,22 @@
   <script src="scripts/battle.js"></script>
 </head>
 <body onload="updateValues()">
-<p>HP:<span id="playerHP">100</span></p>
-<p>Enemy HP:<span id="enemyHP">10</span></p><br>
-<button onclick="attack()">Attack</button>
 
-<div id="version">
-  <a href="https://github.com/SniperZee/WIP-Incremental">Github </a><br>
-  0.0.1
-</div>
+  <div id="game">test</div>
+
+  <span id="name">Hero</span><br>
+  Level <span id="level">1</span> (<span id="xp">0/100</span>)
+  <p>HP: <span id="playerHP">100</span></p>
+  <p>Enemy HP: <span id="enemyHP">10</span></p><br>
+  <button onclick="attack()">Attack</button>
+<hr>
+  DEBUG COMMANDS<br>
+  <button onclick="heal()">Heal me!</button>
+  <button onclick="hurt()">Hurt me!</button>
+
+  <div id="version">
+  <a href="https://github.com/SniperZee/IdleStory">Github </a><br>
+  ultra super mega alpha
+  </div>
 </body>
 </html>
