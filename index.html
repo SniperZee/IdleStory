@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <title>IdleStory</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="jquery-3.4.1.min.js"></script>
   <script src="scripts/main.js"></script>
   <script src="scripts/battle.js"></script>
 </head>
 <body onload="updateValues()">
 
-<div id="game"><div id="ignoretext">PLEASE IGNORE ME FOR NOW</div></div>
+<div id="game">
+  <div id="player"><img id="playerSprite" src="assets/sprites/player/idle.png" alt=""></div><div id="enemy"><img id="enemySprite" src="assets/sprites/enemy/idle.png" alt=""></div>
+</div>
 
   <span id="name">Hero</span><br>
   Level <span id="level">1</span> (<span id="xp">0/100</span>)
@@ -23,7 +26,7 @@
 
   <div id="version">
   <a href="https://github.com/SniperZee/IdleStory">Github </a><br>
-  ultra super mega alpha
+  super mega alpha
   </div>
 </body>
 </html>

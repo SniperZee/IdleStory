@@ -5,7 +5,7 @@ const player = { //player stats
    xpToNextLevel: 100,
    hp: 100,
    hpMax: 100,
-   str: 1,
+   att: 1,
    meso: 0,
 };
 function levelUp(){

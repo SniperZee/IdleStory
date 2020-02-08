@@ -6,3 +6,13 @@ time for css
 ok got a background set, now i just need to figure out how to get some maplestory sprite rips
 no way bannedstory is gone? welp
 oh there's a backup
+
+this backup isn't gonna work, and the other program i've found is currently down. it is open source, though
+i'll just have to build it myself
+oh well, placeholders for now
+
+time to get it animated, somehow
+
+hey that actually looks half decent. somehow
+how the fuck did i do that?
+HOW DID I DO THAT?

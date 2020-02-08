@@ -14,15 +14,13 @@
     height: 500px;
     background-image: url("../assets/bg/henesys.png");
 }
-#ignoretext{
-    text-align: center;
-    padding: 100px;
-    color: #f0f8ff;
-    font-size: 60pt;
-    font-family: Arial,sans-serif;
-    text-shadow:
-            -2px -2px 0 #000,
-            2px -2px 0 #000,
-            -2px 2px 0 #000,
-            2px 2px 0 #000;
+#player {
+    position: absolute;
+    left: 300px;
+    bottom: 25px;
+}
+#enemy {
+    position: absolute;
+    right: 300px;
+    bottom: 25px;
 }
