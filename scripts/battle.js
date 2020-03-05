@@ -31,7 +31,7 @@ function monsterDie(){
 }
 function playerDie(){
    console.log("Player has died.");
-   player.xp -= Math.round(player.xp *= 0.9);
+   player.xp -= Math.round(player.xp *= 0.1);
    player.hp = player.hpMax;
 }
 function animate() {
